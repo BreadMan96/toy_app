@@ -1,7 +1,7 @@
 <html lang="ru">
 <head>
 <meta charset="utf-8" />
-<title>BreadMan training site - Help Page</title>
+<% provide(:title, "Help") %>
 </head>
 <body>
 <!--Создаём таблицу контейнер, которой задаём следующее
@@ -90,7 +90,7 @@ Please don't judge me harshly. I'm new at this.</p>
 <!--Абзац для ссылки на страницу сайта-->
 <p>
 <!--Ссылка на страницу сайта-->
-<a href="http://localhost:3000/static_pages/home">
+<a href="/">
 <!--Картинка маркера перед названием страницы-->
 <img src="">
 <!--Название страницы
@@ -107,6 +107,11 @@ style="margin-left:5px;" - отступ названия от маркера-->
 <a href="http://localhost:3000/static_pages/help">
 <img src="">
 <span style="margin-left:5px;">Help</span></a>
+</p>
+<p>
+	<a href="http://localhost:3000/static_pages/contact">
+	<img src="">
+	<span style="margin-left:5px;">Contact</span></a>
 </p>
 <!--Закрываем строку Меню-->
 </td>
