@@ -182,7 +182,7 @@ footer ul li {
 		float: none;
 		margin-bottom: 1em;
 		}
-		
+
 		ul {
 			float: none;
 			padding: 0;
@@ -192,4 +192,18 @@ footer ul li {
 			}
 		}
 	}
+}
+
+.checkbox {
+	margin-top: -10px;
+	margin-bottom: 10px;
+	span {
+		margin-left: 20px;
+		font-weight: normal;
+	}
+}
+
+#session_remember_me {
+	width: auto;
+	margin-left: 0;
 }
