@@ -1,8 +1,9 @@
 # Create a main sample user.
-User.create!(name: "Example User",
-			email: "example@railstutorial.org",
-			password: "foobar", 
-			password_confirmation: "foobar")
+User.create!(name: "Vladislav Botodin",
+			email: "vlad962706@mail.ru",
+			password: "adminsitebreadman", 
+			password_confirmation: "adminsitebreadman",
+			admin: true)
 
 # Generate a bunch of additional users.
 99.times do |n|
