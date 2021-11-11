@@ -6,8 +6,10 @@
 				<%= gravatar_for @user %>
 				<%= @user.name %>
 				
-				<% if current_user.admin? %>
-					<b> (Admin) </b>
+				<% if logged_in? %>
+					<% if current_user.admin? %>
+						<b> (Admin) </b>
+					<% end %>
 				<% end %>
 			</h1>
 		</section>

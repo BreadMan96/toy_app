@@ -9,6 +9,10 @@
 		<a href="https://ru.stackoverflow.com/users/464446/breadman"> My StackOverFlow</a>
 	</h2>
 
-	<%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
+	<% if logged_in? %>
+				<p>Welcome to my website, <b><%= current_user.name %>!</b></p>
+            <% else %>
+            	<%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
+            	<%= link_to "Log in", login_path, class: "btn btn-lg btn-primary" %>
+            <% end %>
 </div>
-
