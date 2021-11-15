@@ -1,18 +1,32 @@
-<div class="center jumbotron">
-	<h1>Welcome to the Training Site</h1>
+<% if logged_in? %>
+		<div class="row">
+			<aside class="col-md-4">
+				<section class="user_info">
+					<%= render 'shared/user_info' %>
+				</section>
+				<section class="micropost_form">
+					<%= render 'shared/micropost_form' %>
+				</section>
+			</aside>
+		</div>
+	<% else %>
 
-	<h2>
-		This site was created by the programmer BreadMan, for educational purposes.
-		<br><br>
-		<a href="https://github.com/BreadMan96"> My GitHub</a>
-		<br>
-		<a href="https://ru.stackoverflow.com/users/464446/breadman"> My StackOverFlow</a>
-	</h2>
+	<div class="center jumbotron">
+		<h1>Welcome to the Training Site</h1>
 
-	<% if logged_in? %>
-				<p>Welcome to my website, <b><%= current_user.name %>!</b></p>
-            <% else %>
-            	<%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
-            	<%= link_to "Log in", login_path, class: "btn btn-lg btn-primary" %>
-            <% end %>
-</div>
+		<h2>
+			This site was created by the programmer BreadMan, for educational purposes.
+			<br><br>
+			<a href="https://github.com/BreadMan96"> My GitHub</a>
+			<br>
+			<a href="https://ru.stackoverflow.com/users/464446/breadman"> My StackOverFlow</a>
+		</h2>
+
+		<% if logged_in? %>
+			<p>Welcome to my website, <b><%= current_user.name %>!</b></p>
+        <% else %>
+        	<%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
+        	<%= link_to "Log in", login_path, class: "btn btn-lg btn-primary" %>
+        <% end %>
+	</div>
+<% end %>
