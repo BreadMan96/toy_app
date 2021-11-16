@@ -5,6 +5,7 @@ ruby '3.0.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.4', '>=    6.1.4.1'
+gem 'active_storage_validations', '0.9.5'
 gem 'bcrypt',                  '3.1.16'
 gem 'faker',                   '2.19.0'
 gem 'will_paginate',           '3.3.1'
