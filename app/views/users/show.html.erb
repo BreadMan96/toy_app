@@ -7,7 +7,7 @@
 				<%= @user.name %>
 				
 				<% if logged_in? %>
-					<% if current_user.admin? %>
+					<% if current_user.admin? && @user.name == 'Vladislav Borodin' %>
 						<b> (Admin) </b>
 					<% end %>
 				<% end %>
